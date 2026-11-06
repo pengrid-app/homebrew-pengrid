@@ -8,4 +8,4 @@ brew install --cask karvidsson/pengrid/pengrid
 
 The app updates itself after install. For AI agents: see https://pengrid.app/llms.txt for how to connect Pengrid over MCP.
 
-Releasing: bump `version` and both `sha256` values in `Casks/pengrid.rb` to the new dmgs at https://pengrid.app/releases/ (see pengrid-app docs/handoff/release.md).
+Releasing: after `pnpm desktop:publish`, run `./bump.sh <version>` and push. It downloads both dmgs and updates the version and both sha256 values. Old versions are pruned from the bucket, so a cask that is not bumped stops installing.
