@@ -3,7 +3,7 @@
 [Pengrid](https://pengrid.app) is a desktop app for designed documents that your team and your AI agent can edit.
 
 ```sh
-brew install --cask karvidsson/pengrid/pengrid
+brew install --cask pengrid-app/pengrid/pengrid
 ```
 
 The app updates itself after install. For AI agents: see https://pengrid.app/llms.txt for how to connect Pengrid over MCP.
